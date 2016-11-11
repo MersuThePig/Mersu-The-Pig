@@ -1,2 +1,3 @@
-# Mersu The Pig
+# mersuthepig.github.io
+
 Games website data
