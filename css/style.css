@@ -3,6 +3,23 @@
 Primary style
 
 -------------------------------- */
+/* latin-ext */
+@font-face {
+  font-family: 'Minecraft';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Minecraft'), local('Minecraft'), url(http://fonts.gstatic.com/s/minecraft/v3/LfR9_S_HMdQ73mwIHBRxoSEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Minecraft';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Minecraft'), local('Minecraft'), url(http://fonts.gstatic.com/s/minecraft/v3/PuwvqkdbcqU-fCZ9Ed-b7fk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,14 +27,14 @@ Primary style
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 55.5%;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Minecraft", serif;
   color: #ffffff;
-  background-color: #000000 ;
+  background-color: #140505; /* OVO JE BOJA IZMEDJU SLIKA KADA JE ONAJ PRELAZ BILA JE 0f0000 */
 }
 body::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -32,7 +49,7 @@ body::before {
 }
 
 a {
-  color: #535966;
+  color: #535966
   text-decoration: none;
 }
 
@@ -54,8 +71,8 @@ Main Components
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
   text-align: center;
   font-size: 2.6rem;
 }
@@ -113,11 +130,11 @@ Main Components
 
 .cd-half-block {
   background: #000000;
-  color: #535966;
+  color:  #993333;     /* BOJA TEKSTA origina:#535966, dobre boje: #754747 ,#892d2d    */
 }
 .cd-half-block:nth-of-type(1) {
   height: 60vh;
-  background-color: #535966;
+  background-color: #000000;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -129,8 +146,8 @@ Main Components
   line-height: 1.8;
 }
 .cd-section:nth-of-type(2) .cd-half-block:first-of-type {
-  background-image: url("../img/rise_anim.gif");
-  background-size: cover;
+  background-image: url("../img/pig_rise BIG.gif");
+  background-size: 200px 200px;
 }
 .cd-section:nth-of-type(3) .cd-half-block:first-of-type {
   background-image: url("../img/COVER.png");
@@ -141,9 +158,19 @@ Main Components
   background-size: cover;
 }
 .cd-section:nth-of-type(5) .cd-half-block:first-of-type {
-  background-image: url("../img/sit.gif");
-  background-size: cover;
+  background-image: url("../img/joji_mask BIG.gif");
+  background-size: 200px 300px;
+
 }
+.cd-section:nth-of-type(6) .cd-half-block:first-of-type {
+  background-image: url("../img/ghost_baby BIG.gif");
+  background-size: 150px 150px;
+}
+ .cd-section:nth-of-type(7) .cd-half-block:first-of-type {
+  background-image: url("../img/Emotions.gif");
+  background-size: 200px 200px;
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-half-block {
     height: 100vh !important;
@@ -205,7 +232,7 @@ Main Components
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background: transparent url(../img/cd-icon-arrow.svg) no-repeat center center;
+  background: transparent url(../img/cd-icon-arrow.png) no-repeat center center;
   -webkit-transition: opacity 0.2s 0s, visibility 0.2s 0s;
   -moz-transition: opacity 0.2s 0s, visibility 0.2s 0s;
   transition: opacity 0.2s 0s, visibility 0.2s 0s;
