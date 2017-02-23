@@ -158,8 +158,8 @@ Main Components
   background-size: cover;
 }
 .cd-section:nth-of-type(5) .cd-half-block:first-of-type {
-  background-image: url("../img/joji_mask BIG.gif");
-  background-size: 200px 300px;
+  background-image: url("../img/rumple_map.png");
+  background-size: cover;
 
 }
 .cd-section:nth-of-type(6) .cd-half-block:first-of-type {
