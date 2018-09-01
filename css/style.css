@@ -39,7 +39,7 @@ body {
 body::before {
   /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
-  display: none;
+ 
 }
 @media only screen and (min-width: 1170px) {
   body::before {
@@ -175,11 +175,11 @@ Main Components
   .cd-half-block {
     height: 100vh !important;
     width: 50%;
-    position: relative;
+    position: absolute;
     top: 0;
   }
   .cd-half-block p {
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     bottom: auto;
